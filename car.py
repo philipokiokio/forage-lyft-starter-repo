@@ -1,5 +1,4 @@
 from abc import ABC
-from datetime import date
 from parts import battery, engine
 
 
