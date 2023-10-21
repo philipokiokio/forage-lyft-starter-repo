@@ -29,7 +29,7 @@ class TestSpindlerBattery(unittest.TestCase):
 
     def test_battery_needs_service_happy_path(self):
         two_years_ago = datetime.now()
-        two_years_ago = two_years_ago.replace(year=two_years_ago.year - 2)
+        two_years_ago = two_years_ago.replace(year=two_years_ago.year - 3)
         spindler_battery = self.create_battery(last_service_date=two_years_ago.date())
         self.assertTrue(spindler_battery.needs_service())
 
